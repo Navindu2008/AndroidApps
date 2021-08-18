@@ -2,11 +2,16 @@ package com.example.firstapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+        val textView:TextView = findViewById(R.id.textView)
 
 
         // null check option 1 this exclusive works where ‘nullableVariable’ is immutable
@@ -59,6 +64,19 @@ class MainActivity : AppCompatActivity() {
         HeavyClass()
     }
      */
+
+         for(index in "Hello world"){
+             Log.i("value of the index is " , "$index")
+         }
+
+        for(index in 100 downTo 98){
+            Log.i("Log of the index is " , "$index")
+        }
+
+        for(index in 1 until 98 step 3){
+            Log.i("1 to 98 of index is " , "$index")
+        }
+
 
     }
 
